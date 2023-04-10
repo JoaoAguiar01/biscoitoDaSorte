@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  
+  background: linear-gradient(45deg, rgba(25, 3, 97, 1) 0%, rgba(187, 0, 255, 1) 100%);
+  height: 100vh;  
+}
+
+
+.screen1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 42.8rem;
+  height: 42.8rem;
+  margin: 1rem auto 0;
+
+  background: white;
+
+  border-radius: 5px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.screen2{
+  width:42.8rem;
+  height: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 48px;
+  background:rgba(255, 255, 255, 1);
+  box-shadow: 0 2.0rem 5.0rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+}
+.hide {
+  display: none;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #34355b;
+
+  margin-bottom: 1.4rem;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #34355b;
+
+  margin-bottom: 2rem;
+}
+
+#openCookieAgain {
+  width: 17rem;
+  height: 5.2rem;
+  margin-top: 1.5rem;
+
+  background: #ff9500;
+  border-radius: 4px;
+  border-style: none;
+
+  /* text */
+
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.screen1 > button {
+  background: none;
+  border: none;
+}
+
+.screen1 > button:hover {
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-2px, 0) rotate(-1deg); }
+  20% { transform: translate(2px, 0) rotate(1deg); }
+  30% { transform: translate(-2px, 0) rotate(-1deg); }
+  40% { transform: translate(2px, 0) rotate(1deg); }
+  50% { transform: translate(-2px, 0) rotate(-1deg); }
+  60% { transform: translate(2px, 0) rotate(1deg); }
+  70% { transform: translate(-2px, 0) rotate(-1deg); }
+  80% { transform: translate(2px, 0) rotate(1deg); }
+  90% { transform: translate(-2px, 0) rotate(-1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+#yourLuck {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  
+  padding: 1.0rem;
+  margin: auto;
+  text-align: center;
+  width: 29.3rem;
+  height: 10.7rem;
+
+  background:rgba(228, 237, 241, 1);
+  
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+
+  animation: slide-up 2s forwards;
+  
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.screen2 > button {
+  background: #ff9500;
+  border-radius: 4px;
+  border-style: none;
+
+  width: 15rem;
+  height: 5rem;
+
+  color: #ffffff;
+}
+
+.screen2 > button:hover {
+  cursor: pointer;
+  background: #ef9414;
+}
